@@ -53,7 +53,7 @@ We asked our reviewers to rate given summary between [1-5] on following points.
 
 Since the ratings can be subjective to a reviewers's understanding, we collected two sets of ratings for same set of summaries from **two distinct** set of reviewers. 
 
-More information about the dataset can be found [here](). 
+More information about the dataset can be found [here](https://github.com/TarangRanpara/EMFoS/blob/main/Dataset/DATA.csv). 
         
 
 **Computing correlation**
@@ -65,7 +65,7 @@ For building a score out of human judgments, we first averaged the scores from b
 From the collected human judgments, we computed two kinds of scores. 
 
 - **Score-1:** Used "Overall Rating" Score directly
-- **Score-2:** took a Weighted average of qualitative measures (except "Overall Rating") listed above. more on this, [here](). 
+- **Score-2:** took a Weighted average of qualitative measures (except "Overall Rating") listed above. more on this, [here](https://github.com/TarangRanpara/EMFoS/blob/main/Notebooks/README.md). 
 
 we then computed correlation of score-1 and score-2 with set of candidate evaluation metrics falling broadly into 3 categories. 
 
