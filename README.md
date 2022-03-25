@@ -79,23 +79,30 @@ we then computed correlation of score-1 and score-2 with set of candidate evalua
 
     For computing document embeddings, we used **four** different varieties of methods. 
     
-    **Gensim based models** -  Computed average of word embeddings to get document embeddings.
-    
-    **Spacy Models** - Directly used in-built functionality to get the document embeddings. 
-    
-    **Vanilla Transformers (with Bert-like architecture)** - Computed embeddings of [CLS] token, which is generally found at the very beginning of the document.  
-    
-    **Sentence-transformers** - directly used in-built functionality to get the document embeddings.
+    | Type of model      | Description |
+    | :---        | :--- |
+    | Gensim based models |Computes average of word embeddings to get document embeddings.|
+    | Spacy Models | Directly used in-built functionality to get the document embeddings. |
+    | Vanilla Transformers (with Bert-like architecture) | Computed embeddings of [CLS] token, which is generally found at the very beginning of the document.  |
+    | Sentence-transformers | Directly used in-built functionality to get the document embeddings.|
 
 - **Pairwise Contextual Similarity** 
+    
+    we experimented by using different models in [BertScore](https://github.com/Tiiiger/bert_score). 
+    
+    ![BertScore](/Assets/bert_score.png)
+   
 
-    used various models from [BertScore](https://github.com/Tiiiger/bert_score). 
-
-more about these metrics can be found [here](). 
+more about these metrics can be found [here](/Notebooks/README.md). 
 ## Repository Structure
 
+- **Notebooks** directory contains code for computing different scores and computing their correlation with human judgements.
+- **Dataset** directory contains the dataset. 
+- **Assets** directory contains the images/assets used in this repository.    
+
 ```
-project
+EMFoS
+|
 │   README.md  
 │
 └───Notebooks 
@@ -114,6 +121,12 @@ project
 |   |   README.md
 |
 ```
+
+## Results 
+
+Detailed comparison of various evaluation metrics with human judgment with Significance testing can be found [here](https://docs.google.com/spreadsheets/d/1FdVI9LMi-UzOSfdZsdJBWsNYFlnYwAIJBZ5JVgewgvo/edit?usp=sharing). 
+
+
 ## Acknowledgements
 
 I want to convey special gratitude to my colleagues and friends who contributed to the rating process. It wouldn't have been possible without your support.  
@@ -150,13 +163,15 @@ People who contributed to building the dataset by rating the machine-generated s
  - [Krunal Ranpara]()
  - [Mrudang]() 
 
-
+more details on individual contribution can be found [here](/Dataset/README.md)
 
 ## Authors
 
 [Tarang Ranpara](https://in.linkedin.com/in/tarangranpara)
 
 This project is developed and maintained at @ [IRLAB, DAIICT](http://irlab.daiict.ac.in/) under the guidence of [Prof. Prasenjit Majumder](https://in.linkedin.com/in/prasenjit-majumder-15a74720).  
+
+
 ## License Information
 
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
