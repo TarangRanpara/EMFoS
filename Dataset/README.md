@@ -8,27 +8,27 @@ As mentioned in the [main README](/README.md) file, we collected two sets of ann
 
 The dataset contains 1001 rows and below mentioned columns. 
 
-| Column      | Description | 
-| :---        | :--- |           
-| summaryID      | Unique ID       |
-| candidate   | Machine Generated (Candidate) summary        |
-| gold| Human written (reference) summary |
-| title| News Title |
-| grammatical_correctness_1| 1-5 Rating for Grammatical Correctness in **Set-1** |
-| arrangement_1| 1-5 Rating for Arrangement/Flow of information in **Set-1** |
-| quality_1| 1-5 Rating for Text Quality in **Set-1** |
-| conciseness_1| 1-5 Rating for Conciseness in in **Set-1**|
-| exhaustiveness_1| 1-5 Rating for Exhaustiveness in **Set-1**|
-| subjectiveScore_1| 1-5 Rating given to the summary as a whole in **Set-1** |
-| annotator_1| Name of Annotator in **Set-1**|
-| grammatical_correctness_2| 1-5 Rating for Grammatical Correctness in **Set-2** |
-| arrangement_2| 1-5 Rating for Arrangement/Flow of information in **Set-2** |
-| quality_2| 1-5 Rating for Text Quality in **Set-2**|
-| conciseness_2| 1-5 Rating for Conciseness in **Set-2**|
-| exhaustiveness_2| 1-5 Rating for Exhaustiveness in **Set-2** |
-|subjectiveScore_2| 1-5 Rating given to the summary as a whole in **Set-2**|
-| annotator_2| Name of Annotator in **Set-2**|
-| url| URL of original article |
+| Column      | Type | Description |
+| :---        | :--- | :--- |           
+| summaryID      | INT | Unique ID       |
+| candidate   | STRING | Machine Generated (Candidate) summary        |
+| gold| STRING | Human written (reference) summary |
+| title| STRING | News Title |
+| grammatical_correctness_1| INT | 1-5 Rating for Grammatical Correctness in **Set-1** |
+| arrangement_1| INT | 1-5 Rating for Arrangement/Flow of information in **Set-1** |
+| quality_1| INT | 1-5 Rating for Text Quality in **Set-1** |
+| conciseness_1| INT | 1-5 Rating for Conciseness in in **Set-1**|
+| exhaustiveness_1| INT | 1-5 Rating for Exhaustiveness in **Set-1**|
+| subjectiveScore_1| INT | 1-5 Rating given to the summary as a whole in **Set-1** |
+| annotator_1| STRING | Name of Annotator in **Set-1**|
+| grammatical_correctness_2| INT | 1-5 Rating for Grammatical Correctness in **Set-2** |
+| arrangement_2| INT | 1-5 Rating for Arrangement/Flow of information in **Set-2** |
+| quality_2| INT | 1-5 Rating for Text Quality in **Set-2**|
+| conciseness_2| INT | 1-5 Rating for Conciseness in **Set-2**|
+| exhaustiveness_2| INT | 1-5 Rating for Exhaustiveness in **Set-2** |
+|subjectiveScore_2| INT | 1-5 Rating given to the summary as a whole in **Set-2**|
+| annotator_2| STRING | Name of Annotator in **Set-2**|
+| url| STRING | URL of original article |
 
 ## Instructions given to reviewer for rating each of the above columns
 
@@ -71,6 +71,19 @@ The dataset contains 1001 rows and below mentioned columns.
 
 Total 30 people took part in the dataset building process, out of which nine contributed in Set-1 (also called "Inside"), and 21 contributed in Set-2(also called "Outside").
 
+
+Contribution distribution of Set-1: 
+
+![set-1](/Assets/Inside%20DAIICT%20(Set-1).png)
+
+
+Contribution distribution of Set-2: 
+
+![set-2](/Assets/outside%20DAIICT%20(Set-2).png)
+
+Qualification distribution of Annotators (overall): 
+
+![Qualification](/Assets/Distribution%20of%20Qualification.png)
 
 
 
