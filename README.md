@@ -53,7 +53,7 @@ We asked our reviewers to rate given summary between [1-5] on following points.
 
 Since the ratings can be subjective to a reviewers's understanding, we collected two sets of ratings for same set of summaries from **two distinct** set of reviewers. 
 
-More information about the dataset can be found [here](https://github.com/TarangRanpara/EMFoS/blob/main/Dataset/DATA.csv). 
+More information about the dataset can be found [here](https://github.com/TarangRanpara/EMFoS/blob/main/Dataset/README.md). 
         
 
 **Computing correlation**
