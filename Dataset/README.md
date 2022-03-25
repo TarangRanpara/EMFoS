@@ -1,1 +1,77 @@
 ## Dataset
+
+Building upon the content of the [main README](/README.md) file, we'll talk more about the structure of the dataset and dataset building process itself.
+
+## Dataset Columns
+
+As mentioned in the [main README](/README.md) file, we collected two sets of annotations for the same set of summaries. Therefore, for each summary, we have 2 sets of results for Qualitative Measures like Grammatical Correctness, Arrangement/Flow of information, Text Quality, Conciseness, Exhaustiveness, and SubjectiveScore. 
+
+The dataset contains 1001 rows and below mentioned columns. 
+
+| Column      | Description | 
+| :---        | :--- |           
+| summaryID      | Unique ID       |
+| candidate   | Machine Generated (Candidate) summary        |
+| gold| Human written (reference) summary |
+| title| News Title |
+| grammatical_correctness_1| 1-5 Rating for Grammatical Correctness in **Set-1** |
+| arrangement_1| 1-5 Rating for Arrangement/Flow of information in **Set-1** |
+| quality_1| 1-5 Rating for Text Quality in **Set-1** |
+| conciseness_1| 1-5 Rating for Conciseness in in **Set-1**|
+| exhaustiveness_1| 1-5 Rating for Exhaustiveness in **Set-1**|
+| subjectiveScore_1| 1-5 Rating given to the summary as a whole in **Set-1** |
+| annotator_1| Name of Annotator in **Set-1**|
+| grammatical_correctness_2| 1-5 Rating for Grammatical Correctness in **Set-2** |
+| arrangement_2| 1-5 Rating for Arrangement/Flow of information in **Set-2** |
+| quality_2| 1-5 Rating for Text Quality in **Set-2**|
+| conciseness_2| 1-5 Rating for Conciseness in **Set-2**|
+| exhaustiveness_2| 1-5 Rating for Exhaustiveness in **Set-2** |
+|subjectiveScore_2| 1-5 Rating given to the summary as a whole in **Set-2**|
+| annotator_2| Name of Annotator in **Set-2**|
+| url| URL of original article |
+
+## Instructions given to reviewer for rating each of the above columns
+
+- **Grammatical Correctness**
+      
+      - check if the generated summary is grammatically correct. (check common mistakes)
+      - check spelling mistakes, sentence formations, use of punctuations, etc.
+      - Ignore "?" (question mark) if it appears at incorrect positions. It probably represents styled single or double quotes that Django doesn't support.   
+
+- **Arrangement of sentences/flow of information**
+
+      - Read the title, and reference summary to rate the flow of information.
+      - Observe the flow of information and check if it makes sense.
+
+- **Text Quality**
+
+      - How pleasant is it to read?
+      - Ex. check that sentences aren't too long
+      - Does the writing style suit the intended audience? In this case, our audience is newsreaders.
+      - News is supposed to be direct, should sound professional, and should not use slang words unless it's quoting something.
+
+- **Conciseness**
+
+      - Read the title, and reference summary to rate the Conciseness.
+      - check if the summary is concise and it addresses the single most important point. some summaries tend to get into giving brief background info at first but that is fine.
+      - It should not stumble between multiple sub topics.
+
+- **Exhaustiveness**
+
+      - Read the title, and reference summary to rate the Exhaustiveness.
+      - Check if the summary contains enough details.
+      - A summary should contain enough details about the topic it's focusing on.
+      - Ex. If the summary is about some comapny's share going up, the summary should contain details about why it went up, margin by which it went up, etc.
+
+- **Overall Rating**
+      
+      - Read the title, and reference summary to rate the Machine Generated Summary overall.
+
+## Contributors 
+
+Total 30 people took part in the dataset building process, out of which nine contributed in Set-1 (also called "Inside"), and 21 contributed in Set-2(also called "Outside").
+
+
+
+
+
