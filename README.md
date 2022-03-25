@@ -1,11 +1,9 @@
 
 # EMFoS
 
-**EMFoS: Evaluation Metrics for Summarization** 
+**EMFoS: Evaluation Metrics For Summarization** 
 
-Measuring the performance of NLP tasks like News Summarization is a very challenging task. It's not always possible to have human annotators review it. We need an "Automatic Evaluation Metric" that can work without human intervention. It may not be as good as human ratings but a proxy. Thus, a Good "Automatic Evaluation Metric" is supposed to be a good "Proxy" of Human Evaluation (or Ratings). 
-
-The idea is that if we have multiple options for evaluation metrics, we choose one which is a better proxy of human evaluation compared to others.  
+Measuring the performance of NLP tasks like News Summarization is a very challenging task. It's not always possible to have human annotators review it. We need an "Automatic Evaluation Metric" that can work without human intervention. It may not be as good as human ratings but it can be a "**proxy**". Thus, a good "Automatic Evaluation Metric" is supposed to be a good "Proxy" of Human Evaluation (or Ratings). The idea is that if we have multiple options for evaluation metrics, we choose one which is a better proxy of human evaluation compared to others.  
 
 This Repository explores various evaluation metrics, including de-facto-evaluation-metric-for-summarization "ROUGE Score" and some contextual-similarity-based metrics. 
 
@@ -36,7 +34,7 @@ An ideal automatic evaluation metric should consider the above points rather tha
 
 Once the motivation was clear and the path-to-be-explored was decided (i.e., to find an automatic evaluation metric that has a high correlation with the qualitative measures), we started looking for a relevant dataset, but we found none. 
 
-**Dataset Building** 
+### Dataset Building
 
 We decided to take the [Indian News Dataset](https://www.kaggle.com/datasets/sunnysai12345/news-summary), a collection of news articles, news titles, and their respective human-written summaries scraped from [Inshorts](https://www.inshorts.com/).
 
@@ -56,7 +54,7 @@ Since the ratings can be subjective to a reviewers's understanding, we collected
 More information about the dataset can be found [here](https://github.com/TarangRanpara/EMFoS/blob/main/Dataset/README.md). 
         
 
-**Computing correlation**
+### Computing correlation
 
 Once the human ratings were collected, it was now time to build a score out of it and measure its correlation with candidate evaluation metrics.  
 
@@ -64,8 +62,8 @@ For building a score out of human judgments, we first averaged the scores from b
 
 From the collected human judgments, we computed two kinds of scores. 
 
-- **Score-1:** Used "Overall Rating" Score directly
-- **Score-2:** took a Weighted average of qualitative measures (except "Overall Rating") listed above. more on this, [here](https://github.com/TarangRanpara/EMFoS/blob/main/Notebooks/README.md). 
+- **Score-1:** Used "Overall Rating" Score directly (also called "OVERALL SCORE")
+- **Score-2:** took a Weighted average of qualitative measures (except "Overall Rating") listed above (also called "WEIGHTED SCORE"). more on this, [here](https://github.com/TarangRanpara/EMFoS/blob/main/Notebooks/README.md). 
 
 we then computed correlation of score-1 and score-2 with set of candidate evaluation metrics falling broadly into 3 categories. 
 
@@ -107,8 +105,14 @@ project
 |   |   README.md
 │   
 └───Dataset
-    │   DATA.csv
-    │   README.md  
+|   │   DATA.csv
+|   │   README.md
+|
+───Assets  
+│   │   ..
+|   |   ..
+|   |   README.md
+|
 ```
 ## Acknowledgements
 
