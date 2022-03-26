@@ -98,6 +98,19 @@ Qualification distribution of Annotators (overall):
 
 ![Qualification](/Assets/Distribution%20of%20Qualification.png)
 
+## Directory Structure 
+
+- DATA.csv : The Dataset
+
+```
+EMFoS
+|
+└───Dataset 
+│   │   DATA.csv
+|   |   README.md
+
+```
+
 
 
 
