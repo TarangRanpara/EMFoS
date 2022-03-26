@@ -3,13 +3,12 @@
 
 **EMFoS: Evaluation Metrics For Summarization** 
 
-Measuring the performance of NLP tasks like News Summarization is a very challenging task. It's not always possible to have human annotators review it. We need an "Automatic Evaluation Metric" that can work without human intervention. It may not be as good as human ratings but it can be a "**proxy**". Thus, a good "Automatic Evaluation Metric" is supposed to be a good "Proxy" of Human Evaluation (or Ratings). The idea is that if we have multiple options for evaluation metrics, we choose one which is a better proxy of human evaluation compared to others.  
+Measuring the performance of NLP tasks like News Summarization is a very challenging task. It's not always possible to have human annotators review it. We need an "Automatic Evaluation Metric" that can work without human intervention. It may not be as good as human ratings, but it can be a "proxy." Thus, a good "Automatic Evaluation Metric" is supposed to be a good "Proxy" of Human Evaluation (or Ratings). The idea is that if we have multiple options for evaluation metrics, we choose one which is a better proxy of human evaluation compared to others.
 
-This Repository explores various evaluation metrics, including de-facto-evaluation-metric-for-summarization "ROUGE Score" and some contextual-similarity-based metrics. 
-
+This Repository explores various evaluation metrics, including de-facto-evaluation-metric-for-summarization "ROUGE Score" and some contextual-similarity-based metrics.
 We compute Pearson and Spearman-Rank correlation between a respective evaluation metric and human ratings to know "how good proxy the given metric is of human ratings?"
+PS: We get results supporting that contextual similarity is a better proxy of human ratings than ROUGE Score.
 
-**PS:** We get results supporting the fact that contextual similarity is a better proxy of human ratings than ROUGE Score. 
 ## Motivation
 
 Evaluation Metrics like [ROUGE Score](https://aclanthology.org/W04-1013/), which only considers the n-gram overlap between candidate and gold standard, can wrongly penalize abstractive summaries that may not have significant n-gram overlap with a gold standard but convey the same meaning.
@@ -19,7 +18,7 @@ Evaluation Metrics like [ROUGE Score](https://aclanthology.org/W04-1013/), which
 - **Reference:** The weather is cold today.
 - **candidate:** It's freezing today. 
 
-As you can see in above above example, referene and candidate have very little n-gram(n=1,2,3..) overlap but are conveying the same thing. 
+As you can see in the above Example, Reference and candidate have very little n-gram(n=1,2,3..) overlap but convey the same thing. 
 
 The above example consisted of only one sentence, but our summaries may contain many. While evaluating the summary, one should look for qualitative measures like 
 - **Grammatical correctness** 
@@ -27,7 +26,7 @@ The above example consisted of only one sentence, but our summaries may contain 
 - **Text Quality** (Quality of language used and suitability with a set of users the application is serving to)
 - **Coherence** (Conciseness and Exhaustiveness)
 
-An ideal automatic evaluation metric should consider the above points rather than just computing n-gram overlap.  
+An ideal automatic evaluation metric should consider the above points rather than computing n-gram overlap.   
 
 
 ## Methodology
@@ -36,18 +35,18 @@ Once the motivation was clear and the path-to-be-explored was decided (i.e., to 
 
 ### Dataset Building
 
-we wanted a dataset containing news articles, human written summaries, news titles and human ratings for summaries. Since there was no such dataset available, we took a sample from one of such already available dataset, and generated abstractive summaries of news articles using a transformer based model, and had some people rate it on some qualitative measures. 
+We wanted a dataset containing news articles, human-written summaries, news titles, and human ratings for summaries. Since there was no such dataset available, we took a sample from one of such already available datasets. Generated abstractive summaries of news articles using a transformer-based model and had some people rate it on some qualitative measures. 
 
-Therefore, one unique contribution of this project is a dataset containing human ratings for machine generated summaries. 
+Therefore, one unique contribution of this project is a dataset containing human ratings for machine-generated summaries. 
 
 More information about the dataset can be found [here](https://github.com/TarangRanpara/EMFoS/blob/main/Dataset/README.md). 
         
 
-### Computing correlation
+### Computing Correlation
 
-Once the human ratings were collected, we needed to create a score that is representative of qualitative measures we took ratings for. we can take that score and compute its correlation with different metrics to know which metric is a better proxy for human evaluation.      
+Once the human ratings were collected, we needed to create a score representing the qualitative measures we took ratings for. We can take that score and compute its correlation with different metrics to know which metric is a better proxy for human evaluation.      
 
-more about these metrics can be found [here](/Notebooks/README.md). 
+More about these metrics can be found [here](/Notebooks/README.md). 
 
 ## Results 
 
@@ -123,7 +122,7 @@ People who contributed to building the dataset by rating the machine-generated s
  - [Krunal Ranpara]()
  - [Mrudang]() 
 
-more details on individual contribution can be found [here](/Dataset/README.md)
+More details on individual contribution can be found [here](/Dataset/README.md)
 
 
 ## License Information
