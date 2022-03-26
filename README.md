@@ -3,10 +3,10 @@
 
 **EMFoS: Evaluation Metrics For Summarization** 
 
-Measuring the performance of NLP tasks like News Summarization is a very challenging task. It's not always possible to have human annotators review it. We need an "Automatic Evaluation Metric" that can work without human intervention. It may not be as good as human ratings, but it can be a "proxy." Thus, a good "Automatic Evaluation Metric" is supposed to be a good "Proxy" of Human Evaluation (or Ratings). The idea is that if we have multiple options for evaluation metrics, we choose one which is a better proxy of human evaluation compared to others.
+Measuring the performance of NLP tasks like News Summarization is a very challenging task. It's not always possible to have human annotators review it. We need an "Automatic Evaluation Metric" that can work without human intervention. It may not be as good as human ratings, but it can be a "proxy." Thus, a good "Automatic Evaluation Metric" is supposed to be a good "Proxy" of Human Evaluation (or Ratings). The idea is that if we have multiple options for evaluation metrics, we choose one which is a better proxy.
 
-This Repository explores various evaluation metrics, including de-facto-evaluation-metric-for-summarization "ROUGE Score" and some contextual-similarity-based metrics.
-We compute Pearson and Spearman-Rank correlation between a respective evaluation metric and human ratings to know "how good proxy the given metric is of human ratings?"
+This Repository examines relevance of various evaluation metrics as a proxy, including de-facto-evaluation-metric-for-summarization "ROUGE Score" and some contextual-similarity-based metrics. We compute Pearson and Spearman-Rank correlation between a respective evaluation metric and human ratings to know "how good proxy the given metric is of human ratings?"
+
 PS: We get results supporting that contextual similarity is a better proxy of human ratings than ROUGE Score.
 
 ## Motivation
