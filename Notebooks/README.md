@@ -92,6 +92,10 @@ Below is the list of the evaluation metrics we took into consideration.
 
 ## Directory Structure
 
+- **ComputeScores.ipynb** : Compute the results using evaluation metrics mentioned above.  
+- **ComputePearsonCorrelation.ipynb**: compute Pearson Correlation between evaluation metrics and score-1 and score-2.
+- **ComputeSpearmanCorrelation.ipynb** : compute Spearman Correlation between evaluation metrics and score-1 and score-2.
+
 ```
 EMFoS 
 │
