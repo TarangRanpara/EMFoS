@@ -81,6 +81,12 @@ EMFoS
 |
 ```
 
+## Authors
+
+[Tarang Ranpara](https://in.linkedin.com/in/tarangranpara)
+
+This project is developed and maintained at @ [IRLAB, DAIICT](http://irlab.daiict.ac.in/) under the guidence of [Prof. Prasenjit Majumder](https://in.linkedin.com/in/prasenjit-majumder-15a74720).  
+
 ## Acknowledgements
 
 I want to convey special gratitude to my colleagues and friends who contributed to the rating process. It wouldn't have been possible without your support.  
@@ -118,12 +124,6 @@ People who contributed to building the dataset by rating the machine-generated s
  - [Mrudang]() 
 
 more details on individual contribution can be found [here](/Dataset/README.md)
-
-## Authors
-
-[Tarang Ranpara](https://in.linkedin.com/in/tarangranpara)
-
-This project is developed and maintained at @ [IRLAB, DAIICT](http://irlab.daiict.ac.in/) under the guidence of [Prof. Prasenjit Majumder](https://in.linkedin.com/in/prasenjit-majumder-15a74720).  
 
 
 ## License Information
