@@ -1,13 +1,16 @@
 ## Notebooks 
 
-For building a score out of human judgments, we first averaged the scores from both set of annotations to counter the subjectivity of opinions.
+For building a score out of human judgments, we first averaged the scores from both annotations to counter the subjectivity of opinions.
 
 From the collected human judgments, we computed two kinds of scores. 
 
 - **Score-1:** Used "Overall Rating" Score directly (also called "OVERALL SCORE")
 - **Score-2:** took a Weighted average of qualitative measures (except "Overall Rating") listed above (also called "WEIGHTED SCORE").
 
-we then computed correlation of score-1 and score-2 with set of candidate evaluation metrics falling broadly into 3 categories. 
+We then computed the correlation of score-1 and score-2 with a set of candidate evaluation metrics falling broadly into three categories. 
+- N-Gram Overlap
+- Contextual Similarity
+- Pairwise Contextual Similarity
 
 ### N-Gram Overlap
     
@@ -84,8 +87,8 @@ Below is the list of the evaluation metrics we took into consideration.
 1. Compute scores for given summary using supported evaluation metrics. 
 2. Take data from both sets and average out the ratings 
 3. Normalize between [0-1]
-4. From normalized average scores, make two variants of human evaluation score. (one variant is weighted average of qualitative params and another is subjective score) 
-5. Measure pearson and spearman-rank correlation of both variant with each scores computed in step-1.    
+4. From normalized average scores, make two variants of the human evaluation score. (one variant is a weighted average of qualitative params and another is a subjective score) 
+5. Measure Pearson and spearman-rank correlation of both variants with each score computed in step-1.    
 
 ## Directory Structure
 
