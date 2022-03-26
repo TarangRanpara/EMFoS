@@ -27,9 +27,9 @@ For computing document embeddings, we used **four** different varieties of metho
 
 | Type of model      | Description |
 | :---        | :--- |
-| Gensim based models |Computes average of word embeddings to get document embeddings.|
+| Gensim based models |Computes the average of word embeddings to get document embeddings.|
 | Spacy Models | Directly used in-built functionality to get the document embeddings. |
-| Vanilla Transformers (with Bert-like architecture) | Computed embeddings of [CLS] token, which is generally found at the very beginning of the document.  |
+| Vanilla Transformers (with Bert-like architecture) | Computed embeddings of [CLS] token. [CLS] token is prepended at the start of any sentence(s) by the transformer tokenizer.  |
 | Sentence-transformers | Directly used in-built functionality to get the document embeddings.|
 
 ### Pairwise Contextual Similarity
