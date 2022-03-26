@@ -2,9 +2,9 @@
 
 We decided to take the [Indian News Dataset](https://www.kaggle.com/datasets/sunnysai12345/news-summary), a collection of news articles, news titles, and their respective human-written summaries (scraped from [Inshorts](https://www.inshorts.com/)).
 
-We did some pre-processing on the above mentioned dataset and took a sample of 1001 tuples and generated abstractive summaries using [bart-large-cnn](https://huggingface.co/facebook/bart-large-cnn). we used in-house [django-based tool](https://github.com/TarangRanpara/SummaryAnnotatorTool) for collecting human ratings. 
+We did some pre-processing on the dataset mentioned above, took a sample of 1001 tuples, and generated abstractive summaries using [bart-large-cnn](https://huggingface.co/facebook/bart-large-cnn). we used in-house [django-based tool](https://github.com/TarangRanpara/SummaryAnnotatorTool) for collecting human ratings. 
 
-We asked our reviewers to rate given summary between [1-5] on following Qualitative measures. 
+We asked our reviewers to rate the given summary between [1-5] on the following Qualitative measures. 
 
 -  Grammatical Correctness
 -  Arrangement of sentences/Flow of information
@@ -13,9 +13,9 @@ We asked our reviewers to rate given summary between [1-5] on following Qualitat
 -  Exhaustiveness
 -  Overall Rating (subjective to the annotator)
 
-Since the ratings can be subjective to a reviewers's understanding, we got two distict set of people to rate these same 1001 samples. 
+Since the ratings can be subjective to a reviewers' understanding, we got two distinct sets of people to rate these same 1001 samples. 
 
-## Dataset Columns
+## Dataset Structure
 
 As mentioned in the [main README](/README.md) file, we collected two sets of annotations for the same set of summaries. Therefore, for each summary, we have 2 sets of results for Qualitative Measures like Grammatical Correctness, Arrangement/Flow of information, Text Quality, Conciseness, Exhaustiveness, and SubjectiveScore. 
 
