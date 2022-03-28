@@ -17,7 +17,7 @@ Since the ratings can be subjective to a reviewers' understanding, we got two di
 
 ## Dataset Structure
 
-As mentioned in the [main README](/README.md) file, we collected two sets of annotations for the same set of summaries. Therefore, for each summary, we have 2 sets of results for Qualitative Measures like Grammatical Correctness, Arrangement/Flow of information, Text Quality, Conciseness, Exhaustiveness, and SubjectiveScore. 
+We collected two sets of annotations for the same set of summaries. Therefore, for each summary, we have 2 sets of results for Qualitative Measures like Grammatical Correctness, Arrangement/Flow of information, Text Quality, Conciseness, Exhaustiveness, and SubjectiveScore. 
 
 The dataset contains 1001 rows and below mentioned columns. 
 
